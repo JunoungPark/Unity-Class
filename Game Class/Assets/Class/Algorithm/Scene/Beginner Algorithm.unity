@@ -476,7 +476,7 @@ MonoBehaviour:
   answer: {fileID: 512397445}
   input: count
   condition: 0
-  array: 0000000000000000000000000000000000000000
+  array: 2400000025000000260000002500000024000000
 --- !u!4 &1364199346
 Transform:
   m_ObjectHideFlags: 0

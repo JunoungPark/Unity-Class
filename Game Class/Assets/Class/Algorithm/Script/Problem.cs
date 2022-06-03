@@ -8,7 +8,8 @@ public class Problem : MonoBehaviour
     public Text answer;
     public string input;
     public bool condition;
-    public int [] array;
+    public int [] array=new int[5];
+    int value;
 
     // 과잉수 알고리즘
     /*  
@@ -102,12 +103,22 @@ public class Problem : MonoBehaviour
         {
             Debug.Log(array[i]);
         }
+    //나머지로 떨어진 수의 갯수 구하기
     */
 
-    private void Start()
-    {      
-  
-
+    private void Update()
+    {
+        value = 0;
+        for (int i = 0; i < 36; i++) {
+            for (int j = 0; j<5; j++) {
+                if (array[j] % 36 == i)
+                {
+                    value++;
+                    break;
+                }
+            }
+        }
+        answer.text = value.ToString();
     }
 
    
