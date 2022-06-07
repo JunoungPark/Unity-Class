@@ -4,11 +4,9 @@ using UnityEngine;
 
 public class Dead : MonoBehaviour
 {
-    void Update()
+    void OnBecameInvisible()
     {
-        if(Input.GetKeyDown(KeyCode.Return))
-        {
-            Destroy(gameObject);
-        }
+        ObjectPool.objpool.InsertQueue(gameObject);
+        
     }
 }
